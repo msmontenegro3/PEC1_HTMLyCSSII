@@ -1,27 +1,58 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
     <title>UOC Boilerplate</title>
   </head>
   <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
+    <include src="./views/header.html"></include>
+
+
+    <article class="card container">
+
+      <div class="card__description">
+        <h1 class="uoc-title"><a href="index.html">Bolón de verde</a></h1>
+        <p>
+          El bolón de verde ecuatoriano es una esfera dorada y crujiente de plátano verde majado, rellena con queso derretido o chicharrón crocante, perfecta para el desayuno. ¡Suave por dentro, con un toque ahumado y un sabor irresistible! 🍌🧀🔥
+        </p>
+        <figure>
+          <img src="./assets/images/bolon.jpg" alt="Fotografía de un bolón">
+          <figcaption>Fotografía de <cite><a href="https://marcellos.com.ec/bolon-de-verde-con-chicharron-y-aji/" target="_blank _self">Bolon con chicharrón</a></cite> por Marcello's</figcaption>
+        </figure>
+      </div>
+
+      <div class="card__instructions">
+
+        <h3>Ingredientes</h3>
+        <ul>
+          <li><i class="fa-solid fa-star"></i> 2 plátanos verdes</li>
+          <li><i class="fa-solid fa-star"></i> 1 taza de queso rallado</li>
+          <li><i class="fa-solid fa-star"></i> 1 taza de chicharrón</li>
+          <li><i class="fa-solid fa-star"></i> Sal al gusto</li>
+          <li><i class="fa-solid fa-star"></i> Aceite para freír</li>
+        </ul>
+
+        <h3>Preparación</h3>
+        <ol>
+          <li>Cocinamos los verdes con agua y sal hasta que estén suaves para majarlos.</li>
+          <li>Picamos el cerdo en cubos pequeños y le ponemos sal y lo ponemos a freír, por 30 minutos, para que queden como chicharrón (también se pueden hacer en la cocina normal en una sartén)</li>
+          <li>¡Luego mezclamos el verde majado con el queso y el Chicharrón y la mantequilla y formamos una bola!.</li>
+          <li>Servir con la guarnición escogida.</li>
+        </ol>
+
+      </div>
+
+    </article>
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>
 </html>
+
+

@@ -1,0 +1,22 @@
+{
+  "extends": ["stylelint-config-recommended-scss"],
+  "plugins": ["stylelint-order"],
+  "rules": {
+    "selector-class-pattern": "^[a-z]+(-[a-z]+)*(__[a-z]+(-[a-z]+)*)?(--[a-z]+(-[a-z]+)*)?$",
+    "order/order": [
+      "custom-properties",
+      "dollar-variables",
+      "at-rules",
+      "declarations",
+      "rules"
+    ],
+    "color-named": "never",
+    "max-nesting-depth": 2,
+    "selector-max-id": 0,
+    "selector-no-qualifying-type": true,
+    "no-descending-specificity": true,
+    "block-no-empty": true,
+    "comment-no-empty": true,
+    "declaration-block-no-duplicate-properties": true
+  }
+}

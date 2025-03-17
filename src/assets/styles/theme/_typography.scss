@@ -1,0 +1,47 @@
+/*------------------------------------*\
+  #GLOBAL TYPOGRAPHY STYLES
+\*------------------------------------*/
+
+html {
+    font-family: $main-font;
+}
+
+h1{
+    font-size: 1.7rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.header h2{
+    font-size: 2.1rem;
+    
+}
+
+h3{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+p {
+    line-height: 1.7;
+}
+
+a {
+    font-weight: 700;
+}
+
+figcaption {
+    font-size: .8rem;
+    font-style: italic;
+}
+/*------------------------------------*\
+  #ICONS FONT AWESOME
+\*------------------------------------*/
+
+.fa-star {
+    color: $light-color;
+}
+
+.fa-house {
+    color: $dark-brown-color;
+}

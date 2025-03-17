@@ -1,0 +1,41 @@
+/*------------------------------------*\
+  #GLOBAL STYLES
+\*------------------------------------*/
+
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/*------------------------------------*\
+  #PICTURES GLOBAL STYLES
+\*------------------------------------*/
+
+img{
+    width: 100%;
+}
+
+/*------------------------------------*\
+  #TEXT GLOBAL STYLES
+\*------------------------------------*/
+
+ul li, 
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
