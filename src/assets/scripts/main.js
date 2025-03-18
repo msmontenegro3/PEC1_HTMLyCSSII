@@ -13,4 +13,11 @@
 +( function() {
   const university = "UOC";
   console.log(`Hello, ${university}!`);
-} )();
+})();
+
+import axe from 'axe-core';
+
+axe.run(document).then(results => {
+  console.log(results.violations);
+});
+

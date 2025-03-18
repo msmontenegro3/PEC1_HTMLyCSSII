@@ -7,10 +7,9 @@ $breakpoints-up: (
   "large": 75em, //1200px
 );
 
-// Media query for medium devices
-
 @mixin breakpoint($size) {
   @media (min-width: map-get($breakpoints-up, $size)) {
     @content;
   }
 }
+
